@@ -50,4 +50,6 @@ int main() {
 	deleteFirst(&L);
 	printf("elemen list = ");
 	printList(L);
+
+	return 0;
 }
