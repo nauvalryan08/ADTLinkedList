@@ -83,10 +83,12 @@ void deleteBetween(LinkedList *L, int pos) {
         return;
     }
 
-    Node* temp = L->head;
-    for (int i = 1; temp != NULL && i < pos - 1; i++)
+    Node* temp = L->head; 
+    int i = 1;
+    while (temp != NULL && i < pos - 1) {
         temp = temp->next;
-
+	i++;
+    }
     if (temp == NULL || temp->next == NULL) return;
 
     Node* deleteNode = temp->next;
